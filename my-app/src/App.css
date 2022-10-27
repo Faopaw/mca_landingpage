@@ -70,7 +70,7 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
-  width: 25%;
+  width: 50%;
 }
 
 .backgroundimage-main {
@@ -80,8 +80,8 @@
 }
 
 .glow-on-hover {
-  width: 220px;
-  height: 50px;
+  width: 25%;
+  height: auto;
   border: none;
   outline: none;
   color: #fff;
@@ -90,6 +90,7 @@
   position: relative;
   z-index: 0;
   border-radius: 10px;
+  padding: 10px auto;
 }
 
 .glow-on-hover:before {
@@ -142,7 +143,7 @@
 .information-container {
   display: flex;
   flex-flow: column nowrap;
-  background-color: #e0e0e0;
+  background-color: #D1D3D5;
   color: #2A2C2E;
 }
 
@@ -165,12 +166,27 @@
 .information-1 img  {
     width: 40%;
     height: auto;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 .information-2 img  {
   width: 40%;
   height: auto;
+}
+
+.information-1 div  {
+  padding: 1rem;
+}
+.information-2 div  {
+  padding: 1rem;
+}
+
+.information-1 div p  {
+  font-size: 1.2rem;
+}
+
+.information-2 div p  {
+  font-size: 1.2rem;
 }
 
 .testimonials-container {

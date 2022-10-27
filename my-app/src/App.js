@@ -5,6 +5,7 @@ import { Button } from "reactstrap";
 import Container from "react-bootstrap/Container";
 // import Nav from 'react-bootstrap/Nav';
 import Navbar from "react-bootstrap/Navbar";
+import mySvg from './layered-waves-haikei_final.svg'
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
           <button class="glow-on-hover" type="button">Have a Question?</button>
         </div>
       </main>
+      <img src={mySvg} alt="fancy wavy transition between two sections of page"/>
       <section className="information-container">
         <div className="information-1">
           <img
