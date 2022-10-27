@@ -3,6 +3,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { Button } from "reactstrap";
 import Container from "react-bootstrap/Container";
+import Form from './Components/Form'
 // import Nav from 'react-bootstrap/Nav';
 import Navbar from "react-bootstrap/Navbar";
 import mySvg from './layered-waves-haikei_final.svg'
@@ -99,7 +100,7 @@ function App() {
           </p>
         </div>
       </section>
-      <section className="sign-up">
+      {/* <section className="sign-up">
         <div>
           <h3>Why us?</h3>
           <p>
@@ -120,7 +121,8 @@ function App() {
           <input type="text" placeholder="City"></input>
           <button type="submit">Get Early Access</button>
         </form>
-      </section>
+      </section> */}
+      <Form/>
     </div>
   );
 }
