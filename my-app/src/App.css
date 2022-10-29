@@ -7,10 +7,10 @@
 .main-container {
   font-family: 'Open Sans', sans-serif;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
   align-content: flex-start;
   /* background-color: black; */
-  background-image: url("../src/laptop_semifolded_2.png");
+  /* background-image: url("https://my.spline.design/untitled-b5018342d9d14291205c4b9dca0db8fe/"); */
   
   background-size: cover;
   background-repeat: no-repeat;
@@ -77,6 +77,11 @@
   height: 100%;
   width: auto;
   object-fit: contain;
+}
+.mindera3d{
+  height: 700px;
+  margin-left: 200px;
+
 }
 
 .glow-on-hover {

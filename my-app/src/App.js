@@ -41,6 +41,9 @@ function App() {
           <button class="glow-on-hover" type="button">Get in Touch!</button>
           <button class="glow-on-hover" type="button">Have a Question?</button>
         </div>
+        <div className="mindera3d">
+        <iframe src='https://my.spline.design/untitled-b5018342d9d14291205c4b9dca0db8fe/' frameborder='0' width='100%' height='100%'></iframe>
+        </div>
       </main>
       <img src={mySvg} alt="fancy wavy transition between two sections of page"/>
       <section className="information-container">
