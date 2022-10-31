@@ -9,8 +9,8 @@
   display: flex;
   flex-flow: column wrap;
   align-content: flex-start;
-  /* background-color: black; */
-  /* background-image: url("https://my.spline.design/untitled-b5018342d9d14291205c4b9dca0db8fe/"); */
+  background-color: black; 
+   background-image: url("../src/laptop_semifolded_2.png");
   
   background-size: cover;
   background-repeat: no-repeat;
@@ -138,6 +138,7 @@
   top: 0;
   border-radius: 10px;
 }
+
 
 @keyframes glowing {
   0% { background-position: 0 0; }
