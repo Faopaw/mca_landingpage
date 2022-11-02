@@ -5,8 +5,10 @@ import { Button } from "reactstrap";
 import Container from "react-bootstrap/Container";
 // import Nav from 'react-bootstrap/Nav';
 import Navbar from "react-bootstrap/Navbar";
-import mySvg from './layered-waves-haikei_final.svg'
+import mySvg from "./layered-waves-haikei__absolute_final_cropped.svg";
+import Parallax from "react-rellax";
 
+<script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>;
 
 function App() {
   return (
@@ -37,13 +39,46 @@ function App() {
           and get ready to change your life!
         </h3>
         <div className="buttons-main">
-          <button class="glow-on-hover" type="button">Get in Touch!</button>
-          <button class="glow-on-hover" type="button">Have a Question?</button>
+          <button class="glow-on-hover" type="button">
+            Get in Touch!
+          </button>
+          <button class="glow-on-hover" type="button">
+            Have a Question?
+          </button>
         </div>
       </main>
-      <img src={mySvg} alt="fancy wavy transition between two sections of page"/>
+      <img
+        src={mySvg}
+        alt="fancy wavy transition between two sections of page"
+      />
       <section className="information-container">
-        <div className="information-1">
+        <Parallax wrapper=".information-container">
+          <Parallax speed={2} percentage={6}>
+            <span className="shape-1"></span>
+          </Parallax>
+          <Parallax speed={3} percentage={3}>
+            <span className="shape-2"></span>
+          </Parallax>
+          <Parallax speed={4} percentage={2}>
+            <span className="shape-3"></span>
+          </Parallax>
+          <Parallax speed={4} percentage={4}>
+            <span className="shape-4"></span>
+          </Parallax>
+
+          <Parallax speed={2} percentage={2}>
+            <span className="shape-5"></span>
+          </Parallax>
+          <Parallax speed={3} percentage={3}>
+            <span className="shape-6"></span>
+          </Parallax>
+          <Parallax speed={3} percentage={1}>
+            <span className="shape-7"></span>
+          </Parallax>
+          <Parallax speed={1} percentage={3}>
+            <span className="shape-8"></span>
+          </Parallax>
+          <div className="information-1">
           <img
             src={require("./meeting-unsplash.jpg")}
             alt="meeting in an office"
@@ -82,20 +117,25 @@ function App() {
             </p>
           </div>
         </div>
+        </Parallax>
       </section>
       <section className="testimonials-container">
         <h1>Testimonials</h1>
         <div className="testimonials">
           <p className="testemonial-quote">
             “I would reccomend the Frontend Bootcamp to anyone who is serious
-            about getting into the field” <span className="testemonial-quote-author">Vinegar Doppio</span>
+            about getting into the field”{" "}
+            <span className="testemonial-quote-author">Vinegar Doppio</span>
           </p>
           <p className="testemonial-quote">
-          “The instructors were so helpful in making us understand difficult to learn concepts. Couldn't ask for more”<span className="testemonial-quote-author">Dio Brandon</span>
+            “The instructors were so helpful in making us understand difficult
+            to learn concepts. Couldn't ask for more”
+            <span className="testemonial-quote-author">Dio Brandon</span>
           </p>
           <p className="testemonial-quote">
             “I would reccomend the Frontend Bootcamp to anyone who is serious
-            about getting into the field” <span className="testemonial-quote-author">Giorno Giovanna</span>
+            about getting into the field”{" "}
+            <span className="testemonial-quote-author">Giorno Giovanna</span>
           </p>
         </div>
       </section>
