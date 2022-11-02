@@ -4,6 +4,7 @@ import ReactDOM from "react-dom/client";
 import { Button } from "reactstrap";
 import Container from "react-bootstrap/Container";
 import Form from './Components/Form'
+import Testimonal from "./Components/Testimonal";
 // import Nav from 'react-bootstrap/Nav';
 import Navbar from "react-bootstrap/Navbar";
 import mySvg from './layered-waves-haikei_final.svg'
@@ -87,7 +88,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="testimonials-container">
+      {/* <section className="testimonials-container">
         <h1>Testimonials</h1>
         <div className="testimonials">
           <p className="testemonial-quote">
@@ -102,7 +103,7 @@ function App() {
             about getting into the field” <span className="testemonial-quote-author">Giorno Giovanna</span>
           </p>
         </div>
-      </section>
+      </section> */}
       {/* <section className="sign-up">
         <div>
           <h3>Why us?</h3>
@@ -125,6 +126,7 @@ function App() {
           <button type="submit">Get Early Access</button>
         </form>
       </section> */}
+      <Testimonal/>
       <Form/>
     </div>
   );

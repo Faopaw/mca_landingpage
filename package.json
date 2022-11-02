@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Faopaw/mca_landingpage/issues"
   },
-  "homepage": "https://github.com/Faopaw/mca_landingpage#readme"
+  "homepage": "https://github.com/Faopaw/mca_landingpage#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "react-bootstrap": "^2.5.0"
+  }
 }
