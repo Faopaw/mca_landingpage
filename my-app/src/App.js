@@ -11,6 +11,9 @@ import Parallax from "react-rellax";
 <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>;
 
 function App() {
+  const parallaxProps = {
+    zIndex : 999
+  }
   return (
     <div className="App">
       <Navbar id="nav_style" className="nav_style" bg="000000" variant="dark">
@@ -27,6 +30,7 @@ function App() {
           </Navbar.Brand>
         </Container>
       </Navbar>
+      
       <main className="main-container">
         <h1 className="h1-main content-main">Breaking into tech, together</h1>
         <h2 className="h2-main content-main">
@@ -51,34 +55,35 @@ function App() {
         src={mySvg}
         alt="fancy wavy transition between two sections of page"
       />
-      <section className="information-container">
-        <Parallax wrapper=".information-container">
-          <Parallax speed={2} percentage={6}>
+      <Parallax className= {"parallaxStyle"}>
+          <Parallax speed={4} percentage={0.5}>
             <span className="shape-1"></span>
           </Parallax>
-          <Parallax speed={3} percentage={3}>
+          <Parallax speed={3} percentage={0.5}>
             <span className="shape-2"></span>
           </Parallax>
-          <Parallax speed={4} percentage={2}>
+          <Parallax speed={2} percentage={0.5}>
             <span className="shape-3"></span>
           </Parallax>
-          <Parallax speed={4} percentage={4}>
+          <Parallax speed={1} percentage={0.5}>
             <span className="shape-4"></span>
           </Parallax>
 
-          <Parallax speed={2} percentage={2}>
+          <Parallax speed={0} percentage={0.5}>
             <span className="shape-5"></span>
           </Parallax>
-          <Parallax speed={3} percentage={3}>
+          <Parallax speed={-1} percentage={0.5}>
             <span className="shape-6"></span>
           </Parallax>
-          <Parallax speed={3} percentage={1}>
+          <Parallax speed={-2} percentage={2}>
             <span className="shape-7"></span>
           </Parallax>
-          <Parallax speed={1} percentage={3}>
+          <Parallax speed={-3} percentage={0.5}>
             <span className="shape-8"></span>
           </Parallax>
-          <div className="information-1">
+        </Parallax>
+      <section className="information-container">
+        <div className="information-1">
           <img
             src={require("./meeting-unsplash.jpg")}
             alt="meeting in an office"
@@ -117,7 +122,6 @@ function App() {
             </p>
           </div>
         </div>
-        </Parallax>
       </section>
       <section className="testimonials-container">
         <h1>Testimonials</h1>
