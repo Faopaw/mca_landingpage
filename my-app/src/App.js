@@ -34,7 +34,7 @@ function App() {
       <main className="main-container">
         <h1 className="h1-main content-main">Breaking into tech, together</h1>
         <h2 className="h2-main content-main">
-          Let us help you attain your dreams of becoming a programmer
+          Let us help you attain your dreams of becoming a Software Developer
         </h2>
         <h3 className="h3-main content-main">
           If you're looking for an opportunity to kickstart a career as a
@@ -51,16 +51,19 @@ function App() {
           </button>
         </div>
       </main>
-      <img
+      {/* <img
         src={mySvg}
         alt="fancy wavy transition between two sections of page"
-      />
+      /> */}
       <Parallax className= {"parallaxStyle"}>
           <Parallax speed={4} percentage={0.5}>
             <span className="shape-1"></span>
           </Parallax>
           <Parallax speed={3} percentage={0.5}>
             <span className="shape-2"></span>
+          </Parallax>
+          <Parallax speed={-2} percentage={0.5}>
+            <span className="shape-7"></span>
           </Parallax>
           <Parallax speed={2} percentage={0.5}>
             <span className="shape-3"></span>
@@ -75,10 +78,8 @@ function App() {
           <Parallax speed={-1} percentage={0.5}>
             <span className="shape-6"></span>
           </Parallax>
-          <Parallax speed={-2} percentage={2}>
-            <span className="shape-7"></span>
-          </Parallax>
-          <Parallax speed={-3} percentage={0.5}>
+          
+          <Parallax speed={-3} percentage={1}>
             <span className="shape-8"></span>
           </Parallax>
         </Parallax>
