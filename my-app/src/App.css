@@ -52,20 +52,27 @@
 
 
 .h1-main {
-  font-size: 53px;
+  font-size: clamp(2.25rem, 1rem + 4vw, 3.5rem);
+  /* font-size: clamp(2.625rem, 1.75rem + 2.8vw, 3.5rem); */
+  /* font-size: clamp(2rem, 2vw + 1.5rem, 3.5rem); */
   text-shadow : 1px 1px 15px rgb(255, 255, 255);
   letter-spacing: 0.2rem;
 }
 
 .h2-main {
-  font-size: 32px;
+  font-size: clamp(1rem, 0rem + 3.2vw, 2rem);
+  /* font-size: clamp(1rem, 2vw + 1.5rem, 2rem); */
+  max-width: 90%;
   text-shadow : 1px 1px 15px rgb(255, 255, 255);
   letter-spacing: 0.1rem;
   /* line-height: 150%; */
 }
 
 .h3-main {
-  font-size: 21px;
+  /* font-size: 21px; */
+  font-size: clamp(0.75rem, 0.0625rem + 2.2vw, 1.4375rem);
+  max-width: 80%;
+  /* font-size: clamp(1rem, 0rem + 3.2vw, 2rem); */
   text-shadow : 1px 1px 15px rgb(255, 255, 255);
   letter-spacing: 0.1rem;
   line-height: 200%;
@@ -101,7 +108,8 @@
   z-index: 0;
   border-radius: 15px;
   text-shadow : 1px 1px 15px rgb(255, 255, 255);
-  padding: 10px 0;
+  padding: clamp(0.75rem, 0.0625rem + 2.2vw, 1.4375rem);
+  font-size: clamp(0.75rem, 0.0625rem + 2.2vw, 1.4375rem);
 }
 
 .glow-on-hover:before {
@@ -112,7 +120,7 @@
   left:-2px;
   background-size: 400%;
   z-index: -1;
-  filter: blur(5px);
+  filter: blur(10px);
   width: calc(100% + 4px);
   height: calc(100% + 4px);
   animation: glowing 20s linear infinite;
@@ -131,7 +139,6 @@
 }
 
 .glow-on-hover:hover:before {
-  
   opacity: 1;
 }
 
@@ -145,6 +152,7 @@
   left: 0;
   top: 0;
   border-radius: 15px;
+  padding: clamp(0.75rem, 0.0625rem + 2.2vw, 1.4375rem);
   /* padding: 10px; */
 }
 
@@ -152,14 +160,6 @@
   0% { background-position: 0 0; }
   50% { background-position: 400% 0; }
   100% { background-position: 0 0; }
-}
-
-.information-container {
-  display: flex;
-  flex-flow: column nowrap;
-  background-color: #ffffff;
-  color: #2A2C2E;
-  overflow: hidden;
 }
 
 .shape-1 {
@@ -242,6 +242,14 @@
   margin-left: 50%;
 }
 
+.information-container {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #ffffff;
+  color: #2A2C2E;
+  overflow: hidden;
+}
+
 .information-1 {
   display: flex;
   flex-flow: row nowrap;
@@ -260,6 +268,26 @@
   background-color: white;
 }
 
+@media screen and (max-width: 1000px ) {
+  .information-1 {
+    flex-flow: column nowrap;
+    text-align: center;
+  }
+  .information-2 {
+    flex-flow: column nowrap;
+    text-align: center;
+  }
+  .information-1 img  {
+    width: 40%;
+    height: auto;
+    align-self: center;
+}
+.information-2 img  {
+  width: 40%;
+  height: auto;
+  align-self: center;
+}
+}
 
 .information-1 img  {
     width: 40%;

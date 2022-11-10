@@ -6,6 +6,8 @@ import Container from "react-bootstrap/Container";
 // import Nav from 'react-bootstrap/Nav';
 import Navbar from "react-bootstrap/Navbar";
 import mySvg from "./layered-waves-haikei__absolute_final_cropped.svg";
+import info1Svg from "./undraw_building_websites_i78t.svg"
+import info2Svg from "./undraw_developer_activity_re_39tg.svg"
 import Parallax from "react-rellax";
 
 <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>;
@@ -32,7 +34,7 @@ function App() {
       </Navbar>
       
       <main className="main-container">
-        <h1 className="h1-main content-main">Breaking into tech, together</h1>
+        <h1 className="h1-main">Breaking into tech, together</h1>
         <h2 className="h2-main content-main">
           Let us help you attain your dreams of becoming a Software Developer
         </h2>
@@ -86,7 +88,7 @@ function App() {
       <section className="information-container">
         <div className="information-1">
           <img
-            src={require("./meeting-unsplash.jpg")}
+            src={info1Svg}
             alt="meeting in an office"
           />
           <div>
@@ -104,7 +106,7 @@ function App() {
         </div>
         <div className="information-2">
           <img
-            src={require("./laptop-open.jpg")}
+            src={info2Svg}
             alt="side view of open laptop"
           />
           <div>
