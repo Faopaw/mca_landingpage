@@ -6,16 +6,17 @@ import Container from "react-bootstrap/Container";
 // import Nav from 'react-bootstrap/Nav';
 import Navbar from "react-bootstrap/Navbar";
 import mySvg from "./layered-waves-haikei__absolute_final_cropped.svg";
-import info1Svg from "./undraw_building_websites_i78t.svg"
-import info2Svg from "./undraw_developer_activity_re_39tg.svg"
+import info1Svg from "./undraw_building_websites_i78t.svg";
+import info2Svg from "./undraw_developer_activity_re_39tg.svg";
 import Parallax from "react-rellax";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>;
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>;
 
 function App() {
-  const parallaxProps = {
-    zIndex : 999
-  }
+  AOS.init();
   return (
     <div className="App">
       <Navbar id="nav_style" className="nav_style" bg="000000" variant="dark">
@@ -32,7 +33,7 @@ function App() {
           </Navbar.Brand>
         </Container>
       </Navbar>
-      
+
       <main className="main-container">
         <h1 className="h1-main">Breaking into tech, together</h1>
         <h2 className="h2-main content-main">
@@ -57,40 +58,42 @@ function App() {
         src={mySvg}
         alt="fancy wavy transition between two sections of page"
       /> */}
-      <Parallax className= {"parallaxStyle"}>
-          <Parallax speed={4} percentage={0.5}>
-            <span className="shape-1"></span>
-          </Parallax>
-          <Parallax speed={3} percentage={0.5}>
-            <span className="shape-2"></span>
-          </Parallax>
-          <Parallax speed={-2} percentage={0.5}>
-            <span className="shape-7"></span>
-          </Parallax>
-          <Parallax speed={2} percentage={0.5}>
-            <span className="shape-3"></span>
-          </Parallax>
-          <Parallax speed={1} percentage={0.5}>
-            <span className="shape-4"></span>
-          </Parallax>
-
-          <Parallax speed={0} percentage={0.5}>
-            <span className="shape-5"></span>
-          </Parallax>
-          <Parallax speed={-1} percentage={0.5}>
-            <span className="shape-6"></span>
-          </Parallax>
-          
-          <Parallax speed={-3} percentage={1}>
-            <span className="shape-8"></span>
-          </Parallax>
+      <Parallax className={"parallaxStyle"}>
+        <Parallax speed={4} percentage={0.5}>
+          <span className="shape-1"></span>
         </Parallax>
+        <Parallax speed={3} percentage={0.5}>
+          <span className="shape-2"></span>
+        </Parallax>
+        <Parallax speed={-2} percentage={0.5}>
+          <span className="shape-7"></span>
+        </Parallax>
+        <Parallax speed={2} percentage={0.5}>
+          <span className="shape-3"></span>
+        </Parallax>
+        <Parallax speed={1} percentage={0.5}>
+          <span className="shape-4"></span>
+        </Parallax>
+        <Parallax speed={0} percentage={0.5}>
+          <span className="shape-5"></span>
+        </Parallax>
+
+        {/* <Parallax speed={-1} percentage={0.5}>
+          <span className="shape-6"></span>
+        </Parallax>
+
+        <Parallax speed={-3} percentage={1}>
+          <span className="shape-8"></span>
+        </Parallax> */}
+        
+      </Parallax>
       <section className="information-container">
-        <div className="information-1">
-          <img
-            src={info1Svg}
-            alt="meeting in an office"
-          />
+        <div
+          className="information-1"
+          data-aos="fade-up"
+          data-aos-duration="500"
+        >
+          <img src={info1Svg} alt="meeting in an office" />
           <div>
             <h2>What is Mindera Code Academy?</h2>
             <h3>We are part of the Mindera world!</h3>
@@ -104,11 +107,12 @@ function App() {
             </p>
           </div>
         </div>
-        <div className="information-2">
-          <img
-            src={info2Svg}
-            alt="side view of open laptop"
-          />
+        <div
+          className="information-2"
+          data-aos="fade-up"
+          data-aos-duration="500"
+        >
+          <img src={info2Svg} alt="side view of open laptop" />
           <div>
             <h3>Our Journey to Mindera Code Academy</h3>
             <p>
