@@ -50,7 +50,7 @@ function App() {
             About Us
           </button>
           <button class="glow-on-hover" type="button">
-            Have a Question?
+            Learn More
           </button>
         </div>
       </main>
