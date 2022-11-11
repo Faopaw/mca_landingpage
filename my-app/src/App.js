@@ -47,7 +47,7 @@ function App() {
         </h3>
         <div className="buttons-main">
           <button class="glow-on-hover" type="button">
-            Get in Touch!
+            About Us
           </button>
           <button class="glow-on-hover" type="button">
             Have a Question?
