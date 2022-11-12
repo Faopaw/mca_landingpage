@@ -95,7 +95,7 @@ function App() {
         >
           <img src={info1Svg} alt="meeting in an office" />
           <div>
-            <h2>What is Mindera Code Academy?</h2>
+            {/* <h2>What is Mindera Code Academy?</h2> */}
             <h3>We are part of the Mindera world!</h3>
             <p>
               For the last 7+ years, we at Mindera have successfully worked with

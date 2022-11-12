@@ -88,7 +88,6 @@
   flex-flow: row nowrap;
   justify-content: space-around;
   column-gap: 100%;
-  /* width: 50%; */
 }
 
 @media screen and (max-width : 600px) {
@@ -163,7 +162,6 @@
   top: 0;
   border-radius: 15px;
   padding: clamp(0.75rem, 0.0625rem + 2.2vw, 1.4375rem);
-  /* padding: 10px; */
 }
 
 @keyframes glowing {
@@ -266,22 +264,24 @@
   background-color: #ffffff;
   color: #2A2C2E;
   overflow: hidden;
+  gap: 15%;
 }
 
 .information-1 {
   display: flex;
   flex-flow: row nowrap;
   margin: 20px auto;
-  max-width: 70%;
+  max-width: 85%;
   z-index: 99;
   background-color: white;
+  margin-top: 5%;
 }
 
 .information-2 {
   display: flex;
   flex-flow: row-reverse nowrap;
   margin: 20px auto;
-  max-width: 70%;
+  max-width: 85%;
   z-index: 99;
   background-color: white;
 }
@@ -308,20 +308,26 @@
 }
 
 .information-1 img  {
-    width: 40%;
+    width: 70%;
     height: auto;
+    max-width: 400px;
+    margin: 0 7%;
 }
 
 .information-2 img  {
-  width: 40%;
+  width: 70%;
   height: auto;
+  max-width: 400px;
+  margin: 0 7%;
 }
 
 .information-1 div  {
-  padding: 1rem;
+  padding: 2rem;
+  
 }
 .information-2 div  {
-  padding: 1rem;
+  padding: 2rem;
+  margin-right: 1rem;
 }
 
 .information-1 div p  {
