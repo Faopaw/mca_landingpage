@@ -308,6 +308,7 @@
 }
 
 .information-1 img  {
+    /* min-width: 200px; */
     width: 70%;
     height: auto;
     max-width: 400px;
@@ -315,6 +316,7 @@
 }
 
 .information-2 img  {
+  /* min-width: 200px; */
   width: 70%;
   height: auto;
   max-width: 400px;
