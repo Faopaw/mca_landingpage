@@ -87,7 +87,17 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
-  width: 50%;
+  column-gap: 100%;
+  /* width: 50%; */
+}
+
+@media screen and (max-width : 600px) {
+  .buttons-main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 2rem;
+  }
 }
 
 .backgroundimage-main {
@@ -97,7 +107,6 @@
 }
 
 .glow-on-hover {
-  width: 25%;
   height: auto;
   border: none;
   outline: none;
@@ -110,6 +119,7 @@
   text-shadow : 1px 1px 15px rgb(255, 255, 255);
   padding: clamp(0.75rem, 0.0625rem + 2.2vw, 1.4375rem);
   font-size: clamp(0.75rem, 0.0625rem + 2.2vw, 1.4375rem);
+  white-space: nowrap;
 }
 
 .glow-on-hover:before {
