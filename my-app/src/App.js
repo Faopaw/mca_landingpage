@@ -36,7 +36,6 @@ function App() {
   return (
     
     <div className="App">
-    {/* <Router> */}
       <Navbar id="nav_style" className="nav_style" bg="000000" variant="dark">
         <Container>
           <Navbar.Brand href="#home">
@@ -73,10 +72,6 @@ function App() {
           </button>
         </div>
       </main>
-      {/* <img
-        src={mySvg}
-        alt="fancy wavy transition between two sections of page"
-      /> */}
       <Parallax className={"parallaxStyle"}>
         <Parallax speed={4} percentage={0.5}>
           <span className="shape-1"></span>
@@ -96,15 +91,6 @@ function App() {
         <Parallax speed={0} percentage={0.5}>
           <span className="shape-5"></span>
         </Parallax>
-
-        {/* <Parallax speed={-1} percentage={0.5}>
-          <span className="shape-6"></span>
-        </Parallax>
-
-        <Parallax speed={-3} percentage={1}>
-          <span className="shape-8"></span>
-        </Parallax> */}
-        
       </Parallax>
       <section className="information-container">
         <div
@@ -191,7 +177,6 @@ function App() {
           <button type="submit">Get Early Access</button>
         </form>
       </section>
-      {/* </Router> */}
     </div>
   );
 }
