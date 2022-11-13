@@ -1,22 +1,12 @@
 import "./App.css";
-import React, { useEffect, useRef } from "react";
-import { useLocation, Link } from "react-router-dom";
-import {BrowserRouter as Router}  from "react-router-dom";
-import ReactDOM from "react-dom/client";
-import { Button } from "reactstrap";
+import React, { useRef } from "react";
 import Container from "react-bootstrap/Container";
-// import Nav from 'react-bootstrap/Nav';
 import Navbar from "react-bootstrap/Navbar";
-import mySvg from "./layered-waves-haikei__absolute_final_cropped.svg";
 import info1Svg from "./undraw_building_websites_i78t.svg";
 import info2Svg from "./undraw_developer_activity_re_39tg.svg";
 import Parallax from "react-rellax";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
-
-
-
 
 <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>;
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>;
@@ -25,16 +15,15 @@ function App() {
   AOS.init();
   const ref = useRef(null);
   const handleClick = () => {
-    ref.current?.scrollIntoView({behavior: 'smooth'});
+    ref.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   const ref2 = useRef(null);
   const handleClick2 = () => {
-    ref2.current?.scrollIntoView({behavior: 'smooth'});
+    ref2.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    
     <div className="App">
       <Navbar id="nav_style" className="nav_style" bg="000000" variant="dark">
         <Container>
@@ -63,11 +52,20 @@ function App() {
           and get ready to change your life!
         </h3>
         <div className="buttons-main">
-          <button onClick={handleClick} class="glow-on-hover" type="button" href="aboutus">
+          <button
+            onClick={handleClick}
+            class="glow-on-hover"
+            type="button"
+            href="aboutus"
+          >
             About Us
-
           </button>
-          <button onClick={handleClick2}  class="glow-on-hover" type="button" href="#learnmore">
+          <button
+            onClick={handleClick2}
+            class="glow-on-hover"
+            type="button"
+            href="#learnmore"
+          >
             Learn More
           </button>
         </div>
@@ -100,8 +98,7 @@ function App() {
         >
           <img src={info1Svg} alt="meeting in an office" />
           <div ref={ref}>
-            {/* <h2>What is Mindera Code Academy?</h2> */}
-            <h3  id="aboutus">We are part of the Mindera world!</h3>
+            <h3 id="aboutus">We are part of the Mindera world!</h3>
             <p>
               For the last 7+ years, we at Mindera have successfully worked with
               the latest technology to develop secure, robust and scalable web
