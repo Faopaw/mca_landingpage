@@ -351,13 +351,21 @@
 }
 
 .parallaxStyle {
-
-    height : "0px";
-    margin-top : "60vh";
     position :absolute;
     width: 98%;
     /* overflow: hidden; */
 }
+
+@media screen and (max-width: 1000px ) {
+  .parallaxStyle {
+    position :absolute;
+    width: 98%;
+    display: none;
+}
+}
+
+
+
 .testimonials-container {
   background-color: #c7c7c7;
   color: #000000;

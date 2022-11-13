@@ -1,5 +1,7 @@
 import "./App.css";
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { useLocation, Link } from "react-router-dom";
+import {BrowserRouter as Router}  from "react-router-dom";
 import ReactDOM from "react-dom/client";
 import { Button } from "reactstrap";
 import Container from "react-bootstrap/Container";
@@ -12,13 +14,29 @@ import Parallax from "react-rellax";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+
+
+
+
 <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>;
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>;
 
 function App() {
   AOS.init();
+  const ref = useRef(null);
+  const handleClick = () => {
+    ref.current?.scrollIntoView({behavior: 'smooth'});
+  };
+
+  const ref2 = useRef(null);
+  const handleClick2 = () => {
+    ref2.current?.scrollIntoView({behavior: 'smooth'});
+  };
+
   return (
+    
     <div className="App">
+    {/* <Router> */}
       <Navbar id="nav_style" className="nav_style" bg="000000" variant="dark">
         <Container>
           <Navbar.Brand href="#home">
@@ -46,10 +64,11 @@ function App() {
           and get ready to change your life!
         </h3>
         <div className="buttons-main">
-          <button class="glow-on-hover" type="button">
+          <button onClick={handleClick} class="glow-on-hover" type="button" href="aboutus">
             About Us
+
           </button>
-          <button class="glow-on-hover" type="button">
+          <button onClick={handleClick2}  class="glow-on-hover" type="button" href="#learnmore">
             Learn More
           </button>
         </div>
@@ -94,9 +113,9 @@ function App() {
           data-aos-duration="500"
         >
           <img src={info1Svg} alt="meeting in an office" />
-          <div>
+          <div ref={ref}>
             {/* <h2>What is Mindera Code Academy?</h2> */}
-            <h3>We are part of the Mindera world!</h3>
+            <h3  id="aboutus">We are part of the Mindera world!</h3>
             <p>
               For the last 7+ years, we at Mindera have successfully worked with
               the latest technology to develop secure, robust and scalable web
@@ -150,7 +169,7 @@ function App() {
           </p>
         </div>
       </section>
-      <section className="sign-up">
+      <section ref={ref2} className="sign-up">
         <div>
           <h3>Why us?</h3>
           <p>
@@ -172,6 +191,7 @@ function App() {
           <button type="submit">Get Early Access</button>
         </form>
       </section>
+      {/* </Router> */}
     </div>
   );
 }
