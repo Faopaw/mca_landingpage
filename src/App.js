@@ -14,9 +14,12 @@ import {
   ReplayControl,
   ForwardControl,
   CurrentTimeDisplay,
+  LoadingSpinner,
   TimeDivider,
+  BigPlayButton,
   PlaybackRateMenuButton,
   VolumeMenuButton,
+  PosterImage,
 } from "video-react";
 
 <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>;
@@ -34,10 +37,21 @@ function App() {
     ref2.current?.scrollIntoView({ behavior: "smooth" });
   };
 
-  const videoSettings = {
+  const video1Settings = {
     fluid: true,
     preload: "auto",
+    poster: "/assets/video1-poster.png",
   };
+
+  const video2Settings = {
+    fluid: true,
+    preload: "auto",
+    poster: "/assets/video2-poster.png",
+  };
+
+  // BigPlayButton.protoTypes = {
+  //   position: PropTypes.string
+  // }
 
   return (
     <div className="App">
@@ -151,9 +165,14 @@ function App() {
       <section className="video-section">
         <h1 className="h1-video-section">Crack the Code to a new Career</h1>
         <div className="video1-container">
-          <Player props={videoSettings}>
+          <Player
+            poster={require("./assets/video1-poster.png")}
+            props={video1Settings}
+          >
             <source src={require("./Culture_3.mp4")} />
+            <BigPlayButton position="center" />
             <ControlBar>
+              <LoadingSpinner />
               <ReplayControl seconds={10} order={1.1} />
               <ForwardControl seconds={30} order={1.2} />
               <CurrentTimeDisplay order={4.1} />
@@ -164,9 +183,14 @@ function App() {
           </Player>
         </div>
         <div className="video2-container">
-          <Player props={videoSettings}>
+          <Player
+            poster={require("./assets/video2-poster.png")}
+            props={video2Settings}
+          >
             <source src={require("./Services_3.mp4")} />
+            <BigPlayButton position="center" />
             <ControlBar>
+              <LoadingSpinner />
               <ReplayControl seconds={10} order={1.1} />
               <ForwardControl seconds={30} order={1.2} />
               <CurrentTimeDisplay order={4.1} />
