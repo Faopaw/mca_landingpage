@@ -1,5 +1,4 @@
 import "./App.css";
-
 import React, { useRef } from "react";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
@@ -8,7 +7,7 @@ import info2Svg from "./undraw_developer_activity_re_39tg.svg";
 import Parallax from "react-rellax";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "../node_modules/video-react/dist/video-react.css";
+import "./video-react.css";
 import {
   Player,
   ControlBar,
@@ -22,11 +21,6 @@ import {
 
 <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>;
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>;
-<link
-  rel="stylesheet"
-  href="https://video-react.github.io/assets/video-react.css"
-/>;
-<link rel="stylesheet" href="App.css"></link>;
 
 function App() {
   AOS.init();
