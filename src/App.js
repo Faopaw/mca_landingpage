@@ -29,12 +29,12 @@ function App() {
   AOS.init();
   const ref = useRef(null);
   const handleClick = () => {
-    ref.current?.scrollIntoView({ behavior: "smooth" });
+    ref.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
   const ref2 = useRef(null);
   const handleClick2 = () => {
-    ref2.current?.scrollIntoView({ behavior: "smooth" });
+    ref2.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
   const video1Settings = {
@@ -60,7 +60,7 @@ function App() {
           <Navbar.Brand href="#home">
             <img
               alt=""
-              src={require("./mindera-academy-logo.png")}
+              src={require('./mindera-academy-logo.png')}
               width="50"
               height="50"
               className="d-inline-block align-top mca-logo"
@@ -73,34 +73,23 @@ function App() {
       <main className="main-container">
         <h1 className="h1-main">Breaking into tech, together</h1>
         <h2 className="h2-main content-main">
-          Let us help you attain your dreams of becoming a Software Developer
+          Let us help you attain your dreams of becoming a Software Developer.
         </h2>
         <h3 className="h3-main content-main">
-          If you're looking for an opportunity to kickstart a career as a
-          Software Developer, we are here to help! Get exclusive, early access
-          to the Mindera Code Academy as soon as we launch it: Fill in the form
-          and get ready to change your life!
+          If you're looking for an opportunity to kickstart a career as a Software Developer, we are
+          here to help! Get exclusive, early access to the Mindera Code Academy as soon as we launch
+          it: Fill in the form and get ready to change your life!
         </h3>
         <div className="buttons-main">
-          <button
-            onClick={handleClick}
-            class="glow-on-hover"
-            type="button"
-            href="aboutus"
-          >
+          <button onClick={handleClick} class="glow-on-hover" type="button" href="aboutus">
             About Us
           </button>
-          <button
-            onClick={handleClick2}
-            class="glow-on-hover"
-            type="button"
-            href="#learnmore"
-          >
+          <button onClick={handleClick2} class="glow-on-hover" type="button" href="#learnmore">
             Learn More
           </button>
         </div>
       </main>
-      <Parallax className={"parallaxStyle"}>
+      <Parallax className={'parallaxStyle'}>
         <Parallax speed={4} percentage={0.5}>
           <span className="shape-1"></span>
         </Parallax>
@@ -121,43 +110,32 @@ function App() {
         </Parallax>
       </Parallax>
       <section className="information-container">
-        <div
-          className="information-1"
-          data-aos="fade-up"
-          data-aos-duration="500"
-        >
+        <div className="information-1" data-aos="fade-up" data-aos-duration="500">
           <img src={info1Svg} alt="meeting in an office" />
           <div ref={ref}>
             <h3 id="aboutus">We are part of the Mindera world!</h3>
             <p>
-              For the last 7+ years, we at Mindera have successfully worked with
-              the latest technology to develop secure, robust and scalable web
-              and mobile applications. We have been fortunate and proud to work
-              with some of the most talented engineers in the industry and
-              amazing clients. For us, it has always been about the journey, not
-              the destination.
+              For the last 7+ years, we at Mindera have successfully worked with the latest
+              technology to develop secure, robust and scalable web and mobile applications. We have
+              been fortunate and proud to work with some of the most talented engineers in the
+              industry and amazing clients. For us, it has always been about the journey, not the
+              destination.
             </p>
           </div>
         </div>
-        <div
-          className="information-2"
-          data-aos="fade-up"
-          data-aos-duration="500"
-        >
+        <div className="information-2" data-aos="fade-up" data-aos-duration="500">
           <img src={info2Svg} alt="side view of open laptop" />
           <div>
             <h3>Our Journey to Mindera Code Academy</h3>
             <p>
-              Over the last few years, we have been proud to promote education
-              in many ways. We create a culture of autonomy, trust and
-              opportunities and we have dedicated education offerings such as
-              Mindera School, where we train young people to become Software
-              Developers. Mindera Code Academy was born from the organic
-              evolution and educational contribution we have given to the
-              community. Our ambition is to help those who want to start a
-              career in software development. After a successful 1st edition in
-              Portugal under the name MindSwap, Mindera Code Academy now goes
-              global, and you can join us for the ride in the UK and US.
+              Over the last few years, we have been proud to promote education in many ways. We
+              create a culture of autonomy, trust and opportunities and we have dedicated education
+              offerings such as Mindera School, where we train young people to become Software
+              Developers. Mindera Code Academy was born from the organic evolution and educational
+              contribution we have given to the community. Our ambition is to help those who want to
+              start a career in software development. After a successful 1st edition in Portugal
+              under the name MindSwap, Mindera Code Academy now goes global, and you can join us for
+              the ride in the UK and US.
             </p>
           </div>
         </div>
@@ -205,19 +183,17 @@ function App() {
         <h1>Testimonials</h1>
         <div className="testimonials">
           <p className="testemonial-quote">
-            “I would reccomend the Frontend Bootcamp to anyone who is serious
-            about getting into the field”{" "}
-            <span className="testemonial-quote-author">Vinegar Doppio</span>
+            “I would reccomend the Frontend Bootcamp to anyone who is serious about getting into the
+            field” <span className="testemonial-quote-author">Vinegar Doppio</span>
           </p>
           <p className="testemonial-quote">
-            “The instructors were so helpful in making us understand difficult
-            to learn concepts. Couldn't ask for more”
+            “The instructors were so helpful in making us understand difficult to learn concepts.
+            Couldn't ask for more”
             <span className="testemonial-quote-author">Dio Brandon</span>
           </p>
           <p className="testemonial-quote">
-            “I would reccomend the Frontend Bootcamp to anyone who is serious
-            about getting into the field”{" "}
-            <span className="testemonial-quote-author">Giorno Giovanna</span>
+            “I would reccomend the Frontend Bootcamp to anyone who is serious about getting into the
+            field” <span className="testemonial-quote-author">Giorno Giovanna</span>
           </p>
         </div>
       </section>
@@ -225,15 +201,12 @@ function App() {
         <div>
           <h3>Why us?</h3>
           <p>
-            We believe that the best people to teach are those who do the job
-            day in and out. Joining Mindera Code Academy is an opportunity to
-            not only learn how to code but also how to develop and continuously
-            deliver quality software, which is our mindset!
+            We believe that the best people to teach are those who do the job day in and out.
+            Joining Mindera Code Academy is an opportunity to not only learn how to code but also
+            how to develop and continuously deliver quality software, which is our mindset!
           </p>
           <h3>What's Next?</h3>
-          <p>
-            You can be the first to know when we launch Mindera Code Academy!
-          </p>
+          <p>You can be the first to know when we launch Mindera Code Academy!</p>
         </div>
         <form className="sign-form">
           <input type="text" placeholder="Name"></input>
