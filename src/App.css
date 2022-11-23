@@ -6,6 +6,7 @@
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Laila:wght@300;400;700&family=Open+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 
 .main-container {
   font-family: "Open Sans", sans-serif;
@@ -351,6 +352,40 @@
     width: 98%;
     display: none;
   }
+}
+
+.video-section {
+  background-color: #ffffff;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+}
+
+.h1-video-section {
+  max-width: 80%;
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  padding-top: 10%;
+}
+
+.video1-container {
+  padding-top: 20px;
+  width: 70%;
+  min-width: 400px;
+  margin: 10px;
+  height: auto;
+}
+
+.video2-container {
+  width: 70%;
+  min-width: 400px;
+  margin: 10px;
+  height: auto;
 }
 
 .testimonials-container {

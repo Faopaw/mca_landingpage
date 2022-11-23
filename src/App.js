@@ -1,12 +1,26 @@
-import './App.css';
-import React, { useRef } from 'react';
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
-import info1Svg from './undraw_building_websites_i78t.svg';
-import info2Svg from './undraw_developer_activity_re_39tg.svg';
-import Parallax from 'react-rellax';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import "./App.css";
+import React, { useRef } from "react";
+import Container from "react-bootstrap/Container";
+import Navbar from "react-bootstrap/Navbar";
+import info1Svg from "./undraw_building_websites_i78t.svg";
+import info2Svg from "./undraw_developer_activity_re_39tg.svg";
+import Parallax from "react-rellax";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "./video-react.css";
+import {
+  Player,
+  ControlBar,
+  ReplayControl,
+  ForwardControl,
+  CurrentTimeDisplay,
+  LoadingSpinner,
+  TimeDivider,
+  BigPlayButton,
+  PlaybackRateMenuButton,
+  VolumeMenuButton,
+  PosterImage,
+} from "video-react";
 
 <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>;
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>;
@@ -22,6 +36,22 @@ function App() {
   const handleClick2 = () => {
     ref2.current?.scrollIntoView({ behavior: 'smooth' });
   };
+
+  const video1Settings = {
+    fluid: true,
+    preload: "auto",
+    poster: "/assets/video1-poster.png",
+  };
+
+  const video2Settings = {
+    fluid: true,
+    preload: "auto",
+    poster: "/assets/video2-poster.png",
+  };
+
+  // BigPlayButton.protoTypes = {
+  //   position: PropTypes.string
+  // }
 
   return (
     <div className="App">
@@ -108,6 +138,45 @@ function App() {
               the ride in the UK and US.
             </p>
           </div>
+        </div>
+      </section>
+      <section className="video-section">
+        <h1 className="h1-video-section">Crack the Code to a new Career</h1>
+        <div className="video1-container">
+          <Player
+            poster={require("./assets/video1-poster.png")}
+            props={video1Settings}
+          >
+            <source src={require("./Culture_3.mp4")} />
+            <BigPlayButton position="center" />
+            <ControlBar>
+              <LoadingSpinner />
+              <ReplayControl seconds={10} order={1.1} />
+              <ForwardControl seconds={30} order={1.2} />
+              <CurrentTimeDisplay order={4.1} />
+              <TimeDivider order={4.2} />
+              <PlaybackRateMenuButton rates={[5, 2, 1, 0.5, 0.1]} order={7.1} />
+              <VolumeMenuButton disabled />
+            </ControlBar>
+          </Player>
+        </div>
+        <div className="video2-container">
+          <Player
+            poster={require("./assets/video2-poster.png")}
+            props={video2Settings}
+          >
+            <source src={require("./Services_3.mp4")} />
+            <BigPlayButton position="center" />
+            <ControlBar>
+              <LoadingSpinner />
+              <ReplayControl seconds={10} order={1.1} />
+              <ForwardControl seconds={30} order={1.2} />
+              <CurrentTimeDisplay order={4.1} />
+              <TimeDivider order={4.2} />
+              <PlaybackRateMenuButton rates={[5, 2, 1, 0.5, 0.1]} order={7.1} />
+              <VolumeMenuButton disabled />
+            </ControlBar>
+          </Player>
         </div>
       </section>
       <section className="testimonials-container">
