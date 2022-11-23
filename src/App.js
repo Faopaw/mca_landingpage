@@ -22,6 +22,11 @@ import {
 
 <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>;
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>;
+<link
+  rel="stylesheet"
+  href="https://video-react.github.io/assets/video-react.css"
+/>;
+<link rel="stylesheet" href="App.css"></link>;
 
 function App() {
   AOS.init();
