@@ -36,9 +36,9 @@ function App() {
   };
 
   const videoSettings = {
-    fluid : true,
-    preload: "auto"
-  }
+    fluid: true,
+    preload: "auto",
+  };
 
   return (
     <div className="App">
@@ -150,10 +150,10 @@ function App() {
         </div>
       </section>
       <section className="video-section">
-      <h1 className="h1-video-section">Crack the Code to a new Career</h1>
+        <h1 className="h1-video-section">Crack the Code to a new Career</h1>
         <div className="video1-container">
-          <Player props= {videoSettings}>
-            <source src= {require("./Culture_3.mp4")}/>
+          <Player props={videoSettings}>
+            <source src={require("./Culture_3.mp4")} />
             <ControlBar>
               <ReplayControl seconds={10} order={1.1} />
               <ForwardControl seconds={30} order={1.2} />
@@ -165,8 +165,8 @@ function App() {
           </Player>
         </div>
         <div className="video2-container">
-        <Player props= {videoSettings}>
-            <source src= {require("./Services_3.mp4")}/>
+          <Player props={videoSettings}>
+            <source src={require("./Services_3.mp4")} />
             <ControlBar>
               <ReplayControl seconds={10} order={1.1} />
               <ForwardControl seconds={30} order={1.2} />
