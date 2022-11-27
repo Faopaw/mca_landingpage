@@ -1,10 +1,12 @@
 import "./App.css";
 import React, { useRef } from "react";
+import Carousel from 'react-bootstrap/Carousel';
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import info1Svg from "./undraw_building_websites_i78t.svg";
 import info2Svg from "./undraw_developer_activity_re_39tg.svg";
 import Parallax from "react-rellax";
+import Testimonials from "./components/Carousel/carousel";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./video-react.css";
@@ -39,13 +41,13 @@ function App() {
 
   const video1Settings = {
     fluid: true,
-    preload: "auto",
+    preload: "metadata",
     poster: "/assets/video1-poster.png",
   };
 
   const video2Settings = {
     fluid: true,
-    preload: "auto",
+    preload: "metadata",
     poster: "/assets/video2-poster.png",
   };
 
@@ -89,7 +91,7 @@ function App() {
           </button>
         </div>
       </main>
-      <Parallax className={'parallaxStyle'}>
+      {/* <Parallax className={'parallaxStyle'}>
         <Parallax speed={4} percentage={0.5}>
           <span className="shape-1"></span>
         </Parallax>
@@ -108,7 +110,7 @@ function App() {
         <Parallax speed={0} percentage={0.5}>
           <span className="shape-5"></span>
         </Parallax>
-      </Parallax>
+      </Parallax> */}
       <section className="information-container">
         <div className="information-1" data-aos="fade-up" data-aos-duration="500">
           <img src={info1Svg} alt="meeting in an office" />
@@ -180,22 +182,7 @@ function App() {
         </div>
       </section>
       <section className="testimonials-container">
-        <h1>Testimonials</h1>
-        <div className="testimonials">
-          <p className="testemonial-quote">
-            “I would reccomend the Frontend Bootcamp to anyone who is serious about getting into the
-            field” <span className="testemonial-quote-author">Vinegar Doppio</span>
-          </p>
-          <p className="testemonial-quote">
-            “The instructors were so helpful in making us understand difficult to learn concepts.
-            Couldn't ask for more”
-            <span className="testemonial-quote-author">Dio Brandon</span>
-          </p>
-          <p className="testemonial-quote">
-            “I would reccomend the Frontend Bootcamp to anyone who is serious about getting into the
-            field” <span className="testemonial-quote-author">Giorno Giovanna</span>
-          </p>
-        </div>
+        <Testimonials/>
       </section>
       <section ref={ref2} className="sign-up">
         <div>
