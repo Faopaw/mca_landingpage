@@ -91,26 +91,6 @@ function App() {
           </button>
         </div>
       </main>
-      {/* <Parallax className={'parallaxStyle'}>
-        <Parallax speed={4} percentage={0.5}>
-          <span className="shape-1"></span>
-        </Parallax>
-        <Parallax speed={3} percentage={0.5}>
-          <span className="shape-2"></span>
-        </Parallax>
-        <Parallax speed={-2} percentage={0.5}>
-          <span className="shape-7"></span>
-        </Parallax>
-        <Parallax speed={2} percentage={0.5}>
-          <span className="shape-3"></span>
-        </Parallax>
-        <Parallax speed={1} percentage={0.5}>
-          <span className="shape-4"></span>
-        </Parallax>
-        <Parallax speed={0} percentage={0.5}>
-          <span className="shape-5"></span>
-        </Parallax>
-      </Parallax> */}
       <section className="information-container">
         <div className="information-1" data-aos="fade-up" data-aos-duration="500">
           <img src={info1Svg} alt="meeting in an office" />
